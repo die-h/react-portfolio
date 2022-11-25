@@ -1,0 +1,38 @@
+.tweetBody {
+  display: flex;
+}
+.leftSide {
+  padding: 1rem;
+}
+
+.rightSide {
+}
+.tweetHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.threeDots {
+}
+.nameContainer {
+  display: flex;
+  gap: 0.5rem;
+}
+.name {
+  font-weight: 600;
+  color: white;
+}
+.username,
+.threeDots {
+  font-weight: 300;
+  color: gray;
+}
+
+.mainText {
+}
+.profPic {
+  width: 3rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: aquamarine;
+}
