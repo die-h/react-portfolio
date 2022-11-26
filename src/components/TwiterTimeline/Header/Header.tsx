@@ -1,13 +1,16 @@
 import React from "react";
 import style from "./Header.module.scss";
+import { IoSparklesOutline } from "react-icons/io5";
 
 const Header = () => {
   return (
     <>
       <section className={style.header}>
-        <button>pic</button>
+        <button className={style.menuMobileButton}>pic</button>
         <p className={style.headerTitle}>Home</p>
-        <button>sparkle</button>
+        {/* <button className={style.sparkle}> */}
+          <IoSparklesOutline  className={style.sparkle} />
+        {/* </button> */}
       </section>
     </>
   );
