@@ -8,9 +8,7 @@ const Header = () => {
       <section className={style.header}>
         <button className={style.menuMobileButton}>pic</button>
         <p className={style.headerTitle}>Home</p>
-        {/* <button className={style.sparkle}> */}
-          <IoSparklesOutline  className={style.sparkle} />
-        {/* </button> */}
+        <IoSparklesOutline className={style.sparkle} />
       </section>
     </>
   );

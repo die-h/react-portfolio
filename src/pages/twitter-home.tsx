@@ -6,9 +6,15 @@ const TwitterHome = () => {
   return (
     <>
       <Head>
-        <title>Twitter Timeline</title>
+        <title>
+          Twitter Timeline
+        </title>
       </Head>
-      <TwitterTimeline />
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <div></div>
+        <TwitterTimeline />
+        <div></div>
+      </div>
     </>
   );
 };
