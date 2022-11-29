@@ -2,7 +2,8 @@ import React from "react";
 import { Header } from "components/TwiterTimeline";
 import { Tweet } from "components/TwiterTimeline";
 import style from "./TwitterTimeline.module.scss";
-import { MobileNav } from "components/TwiterTimeline"
+import { MobileNav } from "components/TwiterTimeline";
+import { NewTweetBut } from "components/TwiterTimeline";
 
 const users = [2, 3, 4];
 const TwitterTimeline = () => {
@@ -15,7 +16,10 @@ const TwitterTimeline = () => {
             return <Tweet key={item} />;
           })}
         </ul>
-        <MobileNav/>
+        <MobileNav />
+        <div className={style.newTweetBut}>
+        <NewTweetBut />
+        </div>
       </>
     </section>
   );
