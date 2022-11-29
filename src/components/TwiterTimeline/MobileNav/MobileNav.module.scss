@@ -1,0 +1,20 @@
+.nav {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  border-top: 1px solid #fefefe;
+}
+.ulNav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  & svg {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+@media (min-width: 500px) {
+  .nav {
+    display: none;
+  }
+}

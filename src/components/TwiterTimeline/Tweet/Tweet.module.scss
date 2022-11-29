@@ -1,13 +1,14 @@
 .tweetBody {
   display: flex;
+  padding: 1rem 0;
 }
 .leftSide {
   padding: 1rem;
-  width: 15%;
+  width: 20%;
 }
 
 .rightSide {
-  width: 85%;
+  width: 80%;
 }
 .tweetHeader {
   display: flex;
@@ -34,9 +35,11 @@
 }
 
 .tweetContent {
+  font-weight: 400;
+  padding: 1rem 1rem 1rem 0;
 }
 .profPic {
-  width: 3rem;
+  width: 4rem;
   aspect-ratio: 1;
   border-radius: 50%;
   background-color: aquamarine;
@@ -45,4 +48,9 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding-right: 10%;
+  & svg {
+    width: 2rem;
+    height: 2rem;
+  }
 }
