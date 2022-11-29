@@ -5,7 +5,7 @@ import style from "./NewTweetBut.module.scss"
 const NewTweetBut = () => {
   return (
     <button type="button" className={style.newTweet}>
-      <IoAddOutline />
+      <IoAddOutline /> <span>Tweet</span>
     </button>
   );
 };

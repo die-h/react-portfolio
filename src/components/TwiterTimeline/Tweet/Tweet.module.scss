@@ -1,14 +1,15 @@
 .tweetBody {
   display: flex;
   padding: 1rem 0;
+  border-bottom: 0.5px solid #2f3336;
 }
 .leftSide {
-  padding: 1rem;
-  width: 20%;
+  padding: 0 1rem;
+  width: 6rem;
 }
 
 .rightSide {
-  width: 80%;
+  width: 100%;
 }
 .tweetHeader {
   display: flex;
@@ -26,16 +27,19 @@
 }
 .name {
   font-weight: 600;
+  font-size: 1.5rem;
   color: white;
 }
 .username,
 .threeDots {
+  font-size: 1.5rem;
   font-weight: 300;
   color: gray;
 }
 
 .tweetContent {
   font-weight: 400;
+  font-size: 1.5rem;
   padding: 1rem 1rem 1rem 0;
 }
 .profPic {
@@ -54,3 +58,8 @@
     height: 2rem;
   }
 }
+// @media (min-width: 500px) {
+//   .tweetBody {
+//     border: solid 0.5px #2f3336;
+//   }
+// }

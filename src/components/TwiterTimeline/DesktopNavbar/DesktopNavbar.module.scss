@@ -3,20 +3,57 @@
   flex-direction: column;
   align-items: center;
   padding: 1rem;
+  gap: 1.8rem;
+  width: 9rem;
 }
 .navUl {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1.8rem;
   & svg {
     width: 3rem;
     height: 3rem;
   }
+  & span {
+    display: none;
+  }
 }
-
+.longNav {
+  display: none;
+}
+@media (min-height: 615px) {
+  .longNav {
+    display: block;
+  }
+}
+@media (min-height: 700px) {
+  .nav,
+  .navUl {
+    gap: 2rem;
+  }
+}
 @media (max-width: 500px) {
   .nav {
     display: none;
+  }
+}
+@media (min-width: 1280px) {
+  .nav {
+    width: 25rem;
+    padding: 2rem;
+    align-items: flex-start;
+  }
+  .navUl {
+    align-items: flex-start;
+    & span {
+      display: block;
+      font-size: 2rem;
+    }
+    & li {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
   }
 }
