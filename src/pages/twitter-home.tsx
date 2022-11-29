@@ -1,6 +1,10 @@
 import React from "react";
-import { DesktopNavbar } from "components/TwiterTimeline";
-import { TwitterTimeline } from "components/TwiterTimeline";
+import {
+  DesktopNavbar,
+  TwitterTimeline,
+  AsideSection,
+} from "components/TwiterTimeline";
+import {} from "components/TwiterTimeline";
 import Head from "next/head";
 
 const TwitterHome = () => {
@@ -9,10 +13,10 @@ const TwitterHome = () => {
       <Head>
         <title>Twitter Timeline</title>
       </Head>
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <div style={{ display: "flex", justifyContent: "center", position: "relative"}}>
         <DesktopNavbar />
         <TwitterTimeline />
-        <div></div>
+        <AsideSection />
       </div>
     </>
   );

@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  padding: 1.2rem 1.6rem;
+  align-items: center;
+}
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.image {
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 50%;
+  background-color: aqua;
+}
+.userContainer {
+  display: flex;
+  flex-direction: column;
+  & :nth-child(2) {
+    color: #71767b;
+  }
+}
+.followButton {
+  background-color: white;
+  width: 7.6rem;
+  height: 3.2rem;
+  border-radius: 3.2rem;
+  color: black;
+  font-weight: 600;
+}

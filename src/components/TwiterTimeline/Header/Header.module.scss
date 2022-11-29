@@ -7,6 +7,9 @@
   height: 5rem;
   padding: 0.5rem 2rem 0.5rem 1rem;
   gap: 2rem;
+  opacity: 1;
+  backdrop-filter: blur(10px );
+  z-index: 1;
 }
 .headerTitle {
   font-size: 2rem;

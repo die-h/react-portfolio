@@ -1,0 +1,13 @@
+.asideSection {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  gap: 1.6rem;
+  margin: 0 2rem;
+  position: relative;
+}
+@media (max-width: 1020px) {
+  .asideSection {
+    display: none;
+  }
+}

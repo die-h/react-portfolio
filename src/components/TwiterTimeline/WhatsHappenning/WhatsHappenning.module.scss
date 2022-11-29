@@ -1,0 +1,16 @@
+.container > * {
+  padding: 1.4rem;
+}
+.trending {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  & :nth-child(odd), .threeDots {
+    color: #71767b;
+    font-size: 1.3rem;
+  }
+}
+.threeDots {
+  position: absolute;
+  right: 2rem;
+}
