@@ -3,7 +3,7 @@ import style from "./Footer.module.scss";
 
 const Footer = () => {
   return (
-    <div className={style.container}>
+    <div className={style.footer}>
       <a href="#">Terms of Service</a>
       <a href="#">Privacy Policy</a>
       <a href="#">Cookie Policy</a>

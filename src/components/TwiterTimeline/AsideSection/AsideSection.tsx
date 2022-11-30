@@ -3,6 +3,7 @@ import {
   SearchBar,
   WhatsHappenning,
   WhoToFollow,
+  Footer,
 } from "components/TwiterTimeline";
 import style from "./AsideSection.module.scss";
 
@@ -12,6 +13,7 @@ const AsideSection = () => {
       <SearchBar />
       <WhatsHappenning />
       <WhoToFollow />
+      <Footer />
     </section>
   );
 };

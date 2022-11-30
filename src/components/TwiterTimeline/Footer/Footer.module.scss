@@ -1,3 +1,9 @@
-.container {
+.footer {
   color: #71767b;
+  padding: 0 2rem;
+  font-size: 1.3rem;
+  display: flex;
+  column-gap: 1.2rem;
+  row-gap: 0.4rem;
+  flex-wrap: wrap;
 }

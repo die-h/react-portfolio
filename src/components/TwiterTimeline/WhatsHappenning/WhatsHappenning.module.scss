@@ -1,6 +1,9 @@
 .container > * {
   padding: 1.4rem;
 }
+.container > :nth-child(1) {
+  font-size: 2rem;
+}
 .trending {
   position: relative;
   display: flex;
