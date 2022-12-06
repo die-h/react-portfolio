@@ -39,7 +39,17 @@
   font-weight: 300;
   color: gray;
 }
-
+.imgContainer {
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+}
+.tweetImg {
+  border: solid 0.5px #2f3336;
+  border-radius: 2rem;
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+}
 .tweetContent {
   font-weight: 400;
   font-size: 1.5rem;
@@ -49,7 +59,6 @@
   width: 4.4rem;
   aspect-ratio: 1;
   border-radius: 50%;
-  background-color: aquamarine;
 }
 .tweetFooter {
   display: flex;
@@ -61,8 +70,3 @@
     height: 2rem;
   }
 }
-// @media (min-width: 500px) {
-//   .tweetBody {
-//     border: solid 0.5px #2f3336;
-//   }
-// }

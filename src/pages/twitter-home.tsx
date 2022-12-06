@@ -4,14 +4,13 @@ import {
   TwitterTimeline,
   AsideSection,
 } from "components/TwiterTimeline";
-import {} from "components/TwiterTimeline";
 import Head from "next/head";
 
 const TwitterHome = () => {
   return (
     <>
       <Head>
-        <title>Twitter Timeline</title>
+        <title>Twitter Timeline Project</title>
       </Head>
       <div style={{ display: "flex", justifyContent: "center", position: "relative"}}>
         <DesktopNavbar />
@@ -20,6 +19,6 @@ const TwitterHome = () => {
       </div>
     </>
   );
-};
+  };
 
 export default TwitterHome;

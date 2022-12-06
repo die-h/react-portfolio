@@ -1,24 +1,55 @@
-import React from "react";
-import { Header } from "components/TwiterTimeline";
-import { Tweet } from "components/TwiterTimeline";
+import React, { useEffect, useState } from "react";
 import style from "./TwitterTimeline.module.scss";
-import { MobileNav } from "components/TwiterTimeline";
-import { NewTweetBut } from "components/TwiterTimeline";
+import { getRandomQuote } from "utils/getRandomQuote";
+import { getRandomBetweenTwoNumbers } from "utils/getRandomBetweenTwoNumbers";
+import {
+  MobileNav,
+  NewTweetBut,
+  Tweet,
+  Header,
+  AddTweet,
+} from "components/TwiterTimeline";
 
-const users = [2, 3, 4];
 const TwitterTimeline = () => {
+  const [users, setUsers] = useState<TweetRandom[]>([]);
+
+  useEffect(() => {
+    if (users.length === 0) {
+      (async () => {
+        const userAux = [...users];
+        for (let i = 0; i < getRandomBetweenTwoNumbers(5, 7); i++) {
+          const randomTweet: TweetRandom = await getRandomQuote().then(
+            (data) => data
+            );
+            userAux.push(randomTweet);
+          }
+          setUsers(userAux);
+      })();
+    }
+  }, []);
+
   return (
     <section className={style.timeline}>
       <>
         <Header />
+        <AddTweet />
         <ul>
-          {users.map((item) => {
-            return <Tweet key={item} />;
+          {users.map((user) => {
+            return (
+              <Tweet
+                key={user._id}
+                name={user.author}
+                username={user.authorSlug}
+                content={user.content}
+                date={user.dateAdded}
+                picture={"https://picsum.photos/50"}
+              />
+            );
           })}
         </ul>
         <MobileNav />
         <div className={style.newTweetBut}>
-        <NewTweetBut />
+          <NewTweetBut />
         </div>
       </>
     </section>

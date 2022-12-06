@@ -6,7 +6,7 @@ const WhatsHappenning = () => {
   return (
     <AsideLayout>
       <div className={style.container}> 
-      <h4>What's Happenning</h4>
+      <h4>What&apos;s Happenning</h4>
       <div className={style.trending}>
         <span>Trending in somewhere</span>
         <span>Politic topic</span>
