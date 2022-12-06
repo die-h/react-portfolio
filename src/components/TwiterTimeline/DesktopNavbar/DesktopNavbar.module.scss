@@ -1,6 +1,13 @@
-.nav {
+.container {
+  display: flex;
+  flex-direction: column;
   position: sticky;
   top: 0;
+  // align-content: space-between;
+  justify-content: space-between;
+  height: 100vh;
+}
+.nav {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,9 +31,34 @@
 .longNav {
   display: none;
 }
+.user {
+  display: flex;
+  gap: 1.2rem;
+  padding: 2rem;
+}
+.userPic {
+  width: 4rem;
+  border-radius: 50%;
+}
+.usernameContainer {
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+.name {
+  font-size: 15px;
+}
+.username {
+  font-size: 15px;
+  color: #71767b;
+}
+
 @media (min-height: 615px) {
   .longNav {
     display: block;
+  }
+  .user {
+    display: flex;
   }
 }
 @media (min-height: 700px) {
@@ -36,9 +68,10 @@
   }
 }
 @media (max-width: 500px) {
-  .nav {
+  .container {
     display: none;
   }
+  
 }
 @media (min-width: 1280px) {
   .nav {
@@ -57,5 +90,8 @@
       align-items: center;
       gap: 2rem;
     }
+  }
+  .usernameContainer {
+    display: block;
   }
 }

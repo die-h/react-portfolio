@@ -7,11 +7,13 @@ import {
   NewTweetBut,
   Tweet,
   Header,
-  AddTweet,
+  PublishTweet,
 } from "components/TwiterTimeline";
+import { useLocalStorage } from "hooks/useLocalStorage";
 
 const TwitterTimeline = () => {
   const [users, setUsers] = useState<TweetRandom[]>([]);
+  const [userTweets, setUserTweets] = useLocalStorage<TweetUser[]>("myTweets", []);
 
   useEffect(() => {
     if (users.length === 0) {
@@ -20,10 +22,10 @@ const TwitterTimeline = () => {
         for (let i = 0; i < getRandomBetweenTwoNumbers(5, 7); i++) {
           const randomTweet: TweetRandom = await getRandomQuote().then(
             (data) => data
-            );
-            userAux.push(randomTweet);
-          }
-          setUsers(userAux);
+          );
+          userAux.push(randomTweet);
+        }
+        setUsers(userAux);
       })();
     }
   }, []);
@@ -32,8 +34,20 @@ const TwitterTimeline = () => {
     <section className={style.timeline}>
       <>
         <Header />
-        <AddTweet />
+        <PublishTweet userTweets={userTweets} setUserTweets={setUserTweets} />
         <ul>
+          {userTweets.map((user, index) => {
+            return (
+              <Tweet
+                key={index}
+                name={user.name}
+                username={user.username}
+                content={user.tweet}
+                date={user.date}
+                picture={"https://picsum.photos/id/366/100"}
+              />
+            );
+          })}
           {users.map((user) => {
             return (
               <Tweet
@@ -42,7 +56,6 @@ const TwitterTimeline = () => {
                 username={user.authorSlug}
                 content={user.content}
                 date={user.dateAdded}
-                picture={"https://picsum.photos/50"}
               />
             );
           })}

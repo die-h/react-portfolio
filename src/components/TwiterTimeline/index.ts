@@ -1,4 +1,3 @@
-export * from './AddTweet/AddTweet';
 export * from './AsideLayout/AsideLayout';
 export * from './AsideSection/AsideSection';
 export * from './DesktopNavbar/DesktopNavbar';
@@ -6,6 +5,7 @@ export * from './Footer/Footer';
 export * from './Header/Header';
 export * from './MobileNav/MobileNav';
 export * from './NewTweetBut/NewTweetBut';
+export * from './PublishTweet/PublishTweet';
 export * from './SearchBar/SearchBar';
 export * from './Tweet/Tweet';
 export * from './TwitterTimeline/TwitterTimeline';

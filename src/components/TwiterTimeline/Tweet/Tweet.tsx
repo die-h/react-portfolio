@@ -9,10 +9,14 @@ const Tweet = ({ name, username, content, date, picture }: TweetInfo) => {
     <article className={style.tweetBody}>
       <div className={style.leftSide}>
         <img
-          src={`http://picsum.photos/id/${getRandomBetweenTwoNumbers(
-            1,
-            500
-          )}/50`}
+          src={
+            picture
+              ? picture
+              : `http://picsum.photos/id/${getRandomBetweenTwoNumbers(
+                  1,
+                  500
+                )}/100`
+          }
           alt=""
           className={style.profPic}
         />
@@ -28,14 +32,16 @@ const Tweet = ({ name, username, content, date, picture }: TweetInfo) => {
         <p className={style.tweetContent}> {content}</p>
         {Math.random() > 0.5 ? (
           <div className={style.imgContainer}>
-            <img
-              className={style.tweetImg}
-              src={`http://picsum.photos/id/${getRandomBetweenTwoNumbers(
-                1,
-                500
-              )}/500`}
-              alt=""
-            />
+            {picture ? null : (
+              <img
+                className={style.tweetImg}
+                src={`http://picsum.photos/id/${getRandomBetweenTwoNumbers(
+                  1,
+                  500
+                )}/500`}
+                alt=""
+              />
+            )}
           </div>
         ) : null}
         <div>

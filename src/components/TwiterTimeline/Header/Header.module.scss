@@ -8,7 +8,7 @@
   padding: 0.5rem 2rem 0.5rem 1rem;
   gap: 2rem;
   opacity: 1;
-  backdrop-filter: blur(10px );
+  backdrop-filter: blur(10px);
   z-index: 1;
 }
 .headerTitle {
@@ -18,14 +18,13 @@
   position: absolute;
   right: 2rem;
 }
-.menuMobileButton, .menuMobileButton svg {
-width: 3rem;
-height: 3rem;
-background-color: gold;
-border-radius: 50%;
+.userPic {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
 }
 @media (min-width: 500px) {
-  .menuMobileButton {
+  .userPic {
     display: none;
   }
 }

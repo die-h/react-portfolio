@@ -13,9 +13,15 @@ interface TweetInfo {
   username: string;
   content: string;
   date: string;
-  picture: string
+  picture?: string;
 }
 interface TweetFollower {
   name: string;
   username: string;
+}
+interface TweetUser {
+  name: string;
+  username: string;
+  tweet: string;
+  date: string;
 }
