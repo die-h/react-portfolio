@@ -1,6 +1,8 @@
 .main {
   display: grid;
-  grid-row: auto;
-  grid-template-columns: 236px;
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, 23.5rem);
+  grid-auto-rows: 2.5rem;
+  gap: 1.6rem;
+  justify-content: center;
+  padding: 0.8rem 0;
 }
