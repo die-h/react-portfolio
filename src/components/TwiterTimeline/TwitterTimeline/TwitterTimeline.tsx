@@ -6,7 +6,7 @@ import {
   MobileNav,
   NewTweetBut,
   Tweet,
-  Header,
+  TwitterHeader,
   PublishTweet,
 } from "components/TwiterTimeline";
 import { useLocalStorage } from "hooks/useLocalStorage";
@@ -33,7 +33,7 @@ const TwitterTimeline = () => {
   return (
     <section className={style.timeline}>
       <>
-        <Header />
+        <TwitterHeader />
         <PublishTweet userTweets={userTweets} setUserTweets={setUserTweets} />
         <ul>
           {userTweets.map((user, index) => {

@@ -1,10 +1,9 @@
 import React from "react";
 import { RiHome7Fill, RiFileList2Line } from "react-icons/ri";
-import { RxMagnifyingGlass } from "react-icons/rx";
+import { RxMagnifyingGlass, RxAvatar } from "react-icons/rx";
 import { FaRegBell, FaTwitter, FaRegBookmark } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { HiOutlineEllipsisHorizontalCircle } from "react-icons/hi2";
-import { RxAvatar } from "react-icons/rx";
 import { NewTweetBut } from "../NewTweetBut/NewTweetBut";
 import style from "./DesktopNavbar.module.scss";
 

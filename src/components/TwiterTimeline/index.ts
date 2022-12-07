@@ -2,7 +2,7 @@ export * from './AsideLayout/AsideLayout';
 export * from './AsideSection/AsideSection';
 export * from './DesktopNavbar/DesktopNavbar';
 export * from './Footer/Footer';
-export * from './Header/Header';
+export * from './TwitterHeader/TwitterHeader';
 export * from './MobileNav/MobileNav';
 export * from './NewTweetBut/NewTweetBut';
 export * from './PublishTweet/PublishTweet';

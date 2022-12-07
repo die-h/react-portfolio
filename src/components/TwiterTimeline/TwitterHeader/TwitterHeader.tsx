@@ -1,11 +1,11 @@
 import React from "react";
-import style from "./Header.module.scss";
+import style from "./TwitterHeader.module.scss";
 import { IoSparklesOutline } from "react-icons/io5";
 
-const Header = () => {
+const TwitterHeader = () => {
   return (
     <>
-      <section className={style.header}>
+      <header className={style.header}>
         <img
           src="https://picsum.photos/id/366/100"
           alt="user image"
@@ -13,9 +13,9 @@ const Header = () => {
         />
         <p className={style.headerTitle}>Home</p>
         <IoSparklesOutline className={style.sparkle} />
-      </section>
+      </header>
     </>
   );
 };
 
-export { Header };
+export { TwitterHeader };

@@ -8,6 +8,7 @@ export default function Home() {
     <div className={styles.container}>
       <main className={styles.main}>
         <Link href={`twitter-home`}>Twitter Timeline</Link>
+        <Link href={`pinterest-interface`}>Pinterest Interface</Link>
       </main>
 
       <footer className={styles.footer}>
