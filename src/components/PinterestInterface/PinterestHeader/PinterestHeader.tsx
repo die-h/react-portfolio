@@ -10,12 +10,12 @@ const PinterestHeader = () => {
       <nav className={style.nav}>
         <div className={style.leftSide}>
           <div className={style.logoContainer}>
-            <FaPinterest className={style.logo}/>
+            <FaPinterest className={style.logo} />
           </div>
           <ul>
             <li>Inicio</li>
-            <li>Hoy</li>
-            <li className={style.createBut}>
+            <li className={`${style.desktopMenu}`}>Hoy</li>
+            <li className={`${style.createBut} ${style.desktopMenu}`}>
               Crear <FaChevronDown />
             </li>
           </ul>
@@ -25,6 +25,7 @@ const PinterestHeader = () => {
           <input type="text" name="searchValue" id="" placeholder="Search" />
         </div>
         <div className={style.rightSide}>
+          <RxMagnifyingGlass className={style.searchMobile}/>
           <FaRegBell />
           <IoChatbubbleEllipsesSharp />
           <RxAvatar />
