@@ -1,3 +1,7 @@
 .personalInfo {
   width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: auto;
 }

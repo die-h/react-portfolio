@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import style from "./HeroPic.module.scss";
+import style from "./HeroCollage.module.scss";
 import jsLogo from "assets/icons/javascript-logo.svg";
 import reactLogo from "assets/icons/react-logo.svg";
 import dhImg from "assets/images/diego-img-lossy.webp";

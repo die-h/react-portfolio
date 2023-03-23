@@ -1,0 +1,69 @@
+.mainLeft {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+.hmDhLogo {
+  display: none;
+}
+.nameContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.mainName {
+  color: #f3f3f3;
+  $hm-main-name: calc(3.5rem * 100vw / 36rem);
+  font-size: clamp(3.5rem, $hm-main-name, 10rem);
+}
+.nameD,
+.nameH {
+  color: #66b3ff;
+}
+
+.mainProfile {
+  font-weight: 500;
+  color: #f3f3f3;
+  padding-left: 1rem;
+  $hm-main-profile: calc(2.5rem * 100vw / 36rem);
+  font-size: clamp(2.5rem, $hm-main-profile, 5rem);
+}
+.aboutMe {
+  $hm-about-me: calc(1.8rem * 100vw / 36rem);
+  font-size: clamp(1.8rem, $hm-about-me, 3.5rem);
+  width: 100%;
+  color: #f3f3f3;
+  font-weight: 400;
+  padding-left: 1rem;
+  white-space: pre-line;
+  text-align: left;
+}
+
+@media (min-width: 1024px) {
+  .mainLeft {
+    grid-row: 1;
+    gap: 2rem;
+  }
+  .hmDhLogo {
+    display: block;
+    width: calc(16rem * 100vw / 192rem);
+    height: auto;
+  }
+  .mainName {
+    $hm-main-name: calc(3rem * 100vw / 128rem);
+    font-size: clamp(3rem, $hm-main-name, 14rem);
+  }
+  .mainProfile {
+    $hm-main-profile: calc(1.6rem * 100vw / 128rem);
+    font-size: clamp(1.6rem, $hm-main-profile, 7rem);
+  }
+  .aboutMe {
+    width: 80%;
+    $hm-about-me: calc(1.4rem * 100vw / 128rem);
+    font-size: clamp(1.4rem, $hm-about-me, 4rem);
+  }
+}
