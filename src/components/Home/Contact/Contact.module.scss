@@ -1,24 +1,26 @@
 .footer {
+  width: 20%;
   height: 6rem;
   display: flex;
   align-items: center;
-  padding: 0 3rem;
+  padding: 0 3rem 2rem;
   margin-top: auto;
 }
-.social-media-container {
+.socialMediaContainer {
   display: flex;
   align-items: center;
   gap: 3rem;
 }
-.social-media {
+.socialMedia {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
   & a {
     color: #f3f3f3;
+    font-size: 2.4rem;
   }
 }
-.social-icon {
-  width: 2.4rem;
-  height: 2.4rem;
+.socialIcon {
+  width: 3.6rem;
+  height: 3.6rem;
 }

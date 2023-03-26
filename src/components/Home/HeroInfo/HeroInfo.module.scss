@@ -52,6 +52,11 @@
     display: block;
     width: calc(16rem * 100vw / 192rem);
     height: auto;
+    will-change: transform;
+    transition: 2s;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
   .mainName {
     $hm-main-name: calc(3rem * 100vw / 128rem);

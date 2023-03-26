@@ -7,7 +7,7 @@ const Contact = () => {
     <footer className={style.footer}>
       <div className={style.socialMediaContainer}>
         <div className={style.socialMedia}>
-          <BsGithub />
+          <BsGithub className={style.socialIcon}/>
           <a
             href="https://github.com/die-h"
             target="_blank"
@@ -17,7 +17,7 @@ const Contact = () => {
           </a>
         </div>
         <div className={style.socialMedia}>
-          <BsLinkedin />
+          <BsLinkedin className={style.socialIcon}/>
           <a
             href="https://www.linkedin.com/in/diego-horacio-hermida/"
             target="_blank"

@@ -27,7 +27,8 @@
 .diegoImage {
   width: 100%;
   height: 100%;
-  border-radius: 5rem;
+  $dimgBrdRad: calc(6rem * 100vw / 128rem);
+  border-radius: clamp(5rem, $dimgBrdRad, 10rem);
 }
 .reactLogo {
   width: 100%;

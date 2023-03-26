@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PersonalInfo, Contact } from "components/Home";
+import { PersonalInfo, WallPost, Contact } from "components/Home";
 import styles from "styles/Home.module.css";
 
 export default function Home() {
@@ -7,11 +7,9 @@ export default function Home() {
     <div className={styles.container}>
       <PersonalInfo />
 
-      <main className={styles.main}>
-        <Link href={`twitter-home`}>Twitter Timeline</Link>
-        <Link href={`pinterest-interface`}>Pinterest Interface</Link>
-      </main>
-
+      <WallPost />
+        {/* <Link href={`twitter-home`}>Twitter Timeline</Link>
+        <Link href={`pinterest-interface`}>Pinterest Interface</Link> */}
       <Contact />
     </div>
   );
