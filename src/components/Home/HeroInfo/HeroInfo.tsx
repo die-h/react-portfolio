@@ -19,10 +19,10 @@ const HeroInfo = () => {
       <p
         className={style.aboutMe}
       >{`HTML5 - CSS3 - JS
+      Typescript
       React.js / Webpack - Vite.
       Sass - Tailwind for styling
       Next.js as framework.
-      Backend with Express - Node.js. 
       AZ-900 Microsoft Azure certified.
       Crypto-enthusiast`}</p>
     </div>

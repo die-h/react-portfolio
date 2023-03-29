@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Twitter Interface",
+    "description": "Twitter interface with dark theme. You can make tweets and will remain after refreshing the page",
+    "img": "twitter-interface.png",
+    "url": "",
+    "link": "twitter-interface"
+  },
+  {
+    "title": "Pinterest Interface",
+    "description": "Pinterest interface with dark theme. Dynamic creation of the grid of images",
+    "img": "pinterest-interface.png",
+    "url": "",
+    "link": "pinterest-interface"
+  },
+  {
+    "title": "To Do List ",
+    "description": "Simple web-based To Do List. You can add, complete or delete To Do. It will remain after refreshing the page",
+    "img": "todolist.png",
+    "url": "https://to-do-list-die-h.vercel.app/",
+    "link": ""
+  }
+]

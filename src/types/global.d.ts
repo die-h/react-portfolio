@@ -3,4 +3,5 @@ interface WallPostType {
   description: string;
   img: string;
   url: string;
+  link?: string;
 }

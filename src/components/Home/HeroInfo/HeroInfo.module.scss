@@ -59,16 +59,18 @@
     }
   }
   .mainName {
-    $hm-main-name: calc(3rem * 100vw / 128rem);
-    font-size: clamp(3rem, $hm-main-name, 14rem);
+    $hm-main-name: calc(2.4rem * 100vw / 128rem);
+    font-size: clamp(2.4rem, $hm-main-name, 14rem);
   }
   .mainProfile {
     $hm-main-profile: calc(1.6rem * 100vw / 128rem);
     font-size: clamp(1.6rem, $hm-main-profile, 7rem);
+    padding-left: 0;
   }
   .aboutMe {
     width: 80%;
     $hm-about-me: calc(1.4rem * 100vw / 128rem);
     font-size: clamp(1.4rem, $hm-about-me, 4rem);
+    padding-left: 0;
   }
 }

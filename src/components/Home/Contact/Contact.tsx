@@ -5,6 +5,7 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 const Contact = () => {
   return (
     <footer className={style.footer}>
+      <h3 className={style.contactTitle}>Contact</h3>
       <div className={style.socialMediaContainer}>
         <div className={style.socialMedia}>
           <BsGithub className={style.socialIcon}/>

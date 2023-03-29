@@ -1,0 +1,26 @@
+.wall{
+  width: 55%;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-top: 3rem;
+}
+
+// Title / links
+.projectsTitle {
+  $projects-title: calc(2rem * 100vw / 128rem);
+  font-size: clamp(2rem, $projects-title, 7rem);
+}
+
+//Container 
+.projectsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem 2.4rem;
+  padding: 1.6rem;
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

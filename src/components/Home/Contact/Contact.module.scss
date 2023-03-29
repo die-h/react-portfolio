@@ -1,15 +1,21 @@
 .footer {
   width: 20%;
-  height: 6rem;
   display: flex;
-  align-items: center;
-  padding: 0 3rem 2rem;
-  margin-top: auto;
+  flex-direction: column; 
+  gap: 1.2rem;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+.contactTitle {
+  $contact-title: calc(2rem * 100vw / 128rem);
+  font-size: clamp(2rem, $contact-title, 7rem);
 }
 .socialMediaContainer {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
+  display: grid;
+  align-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  padding: 1rem;
 }
 .socialMedia {
   display: flex;
@@ -17,10 +23,12 @@
   gap: 1rem;
   & a {
     color: #f3f3f3;
-    font-size: 2.4rem;
+    $socialMediaFontSize: calc(2.4rem * 100vw / 192rem);
+    font-size: clamp(1.6rem, $socialMediaFontSize, 4.8rem);
   }
 }
 .socialIcon {
-  width: 3.6rem;
-  height: 3.6rem;
+  $socialIconSize: calc(3.6rem * 100vw / 192rem);
+  width: clamp(2.4rem, $socialIconSize, 7.2rem);
+  height: clamp(2.4rem, $socialIconSize, 7.2rem);
 }
